@@ -1,0 +1,29 @@
+FID,Id,Name,Greenway,RiverRing,Miles,Jurisdict,Subproject,F2017,F2017_Phase,Proj_Mgr,Shape__Length
+1,262,Ted Jones Trail to Forestwood Park,Maline,Engineering,0.848575805,2,262,20000,Engineering,Megan Riechmann,0.014665946
+2,191,Ruth Porter Mall Park to Forest Park,St. Vincent,Construction,0.551409389,1,191,100000,Construction,Todd Antoine,0.008044866
+3,243,Deer Creek Park to Lorriane Davis Park,Deer Creek,Construction,1.464317838,2,243,385000,Construction,Megan Riechmann,0.02503726
+4,235,Alabama Bridge to Mississippi Greenway,River des Peres,Construction,1.125446429,2,235,1630000,Construction,Todd Antoine,0.01831971
+5,286,Bridges in Bella Fontaine Park,Maline,Construction,1.628294364,2,286,385000,Construction,Patrick Owens,0.028128828
+6,118,Orlando's to River des Peres Greenway - Phase 2,Gravois,Engineering,1.605312198,2,118,410000,Engineering,Megan Riechmann/Lonny Boring,0.02801635
+7,56,Trestle - Repairs/Construction,Mississippi,Construction,1.241005152,1,56,75000,Construction,Todd Antoine,0.019461086
+8,406,Route 66 State Park Bridge,Meramec,Planning,0.198830346,2,406,25000,Planning,Patrick Owens,0.003518645
+9,187,Skinker Ave to St. Vincent County Park,St. Vincent,Engineering,2.440665286,2,187,100000,Engineering,Megan Riechmann,0.038799764
+10,196,Deer Creek Center to RdP Greenway,Deer Creek,Engineering,1.112831096,2,196,567000,Engineering,Todd Antoine,0.019270939
+11,305,Boyle Ave to Sarah Ave,Chouteau,Engineering,0.251965084,1,305,542000,Engineering,Mark Vogl,0.004594434
+12,256,Shrewsbury/Landsdow Metrolink to Francis Slay,River des Peres,Construction,1.332911305,1,256,480000,Construction,Todd Antoine,0.020565989
+13,61,Old Chain of Rocks Bridge,Mississippi,Planning,2.712210184,1,61,540000,Construction,Ben Grossman,0.048647676
+14,108,Chouteau to OCRB,Mississippi,Engineering,12.291576,1,108,325000,Engineering,Ben Grossman,0.19116964
+15,57,Trestle Connections,Mississippi,Engineering,2.109032362,1,57,55000,Engineering,Mark Vogl,0.032538421
+16,287,Deer Creek to Rogers Parkway,Deer Creek,Planning,0.714918754,2,287,0,Planning,Megan Riechmann,0.011315136
+17,269,McKelvey Woods to Creve Coeur Park,Fee Fee,Construction,1.963099798,2,269,225000,Construction,Mark Vogl,0.033496849
+18,252,Sister Marie Charles Park to Bellerive Park,Mississippi,Construction,0.317631791,1,252,40000,Construction,Todd Antoine,0.005282182
+19,605,Bridges over Highways 364/94,Centennial,Construction,0.718632626,3,605,625000,Construction,Patrick Owens,0.011374504
+20,216,Cottleville Hwy N to Weiss Rd,Dardenne,Construction,1.099845863,3,216,240000,Construction,Mark Vogl,0.01933125
+21,173,Cliff Cave Park to Telegraph Road,Mississippi,Construction,2.038120895,2,173,426000,Construction,Megan Riechmann,0.034702386
+22,308,Boyle Avenue to Forest Park,Chouteau,Engineering,1.047643961,1,308,275000,Engineering,Mark Vogl,0.018613569
+23,294,Weiss Road to Legacy Park,Dardenne,Engineering,0.270660891,3,294,75000,Engineering,Mark Vogl,0.004245876
+24,320,Rogers Parkway to Strassner Drive,Deer Creek,Planning,0.81760329,2,320,29500,Planning,Megan Riechmann,0.012162482
+25,402,Eads Bridge to Mullanphy Pump House,Mississippi,Engineering,12.291576,1,402,725000,Engineering,Ben Grossman,0.19116964
+26,293,Chouteau to Lyons Park,Mississippi,Engineering,2.541286463,1,293,37500,Engineering,Todd Antoine,0.040345443
+27,392,Forest Park to Slay Park,River des Peres,Planning,2.788206991,1,392,37500,Planning,Todd Antoine,0.047450208
+28,118,Orlando's to River des Peres Greenway - Phase 1,Gravois,Construction,0.406992519,2,118,100000,Construction,Megan Riechmann/Lonny Boring,0.007244626

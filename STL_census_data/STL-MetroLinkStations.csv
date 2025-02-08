@@ -1,0 +1,38 @@
+FID,OBJECTID,Station,Parking,LongTerm,LINES_SERV,ADDRESS,CITY,STATE,ZIP
+1,1,Lambert Airport-Main,0,0,RED LINE,10701 Lambert International Blvd.,Saint Louis,Missouri,63145
+2,2,Lambert Airport-East,0,0,RED LINE,10701 Lambert International Blvd.,Saint Louis,Missouri,63145
+3,3,North Hanley,1705,0,RED LINE,4398 Hanley Road,Berkeley,Missouri,63134
+4,4,UMSL-North,0,0,RED LINE,8298 Bellerive Drive,Normandy,Missouri,63121
+5,5,UMSL-South,130,0,RED LINE,7798 Natural Bridge Road,Normandy,Missouri,63121
+6,6,Rock Road,191,0,RED LINE,7019 St. Charles Rock Road,Pagedale,Missouri,63133
+7,7,Wellston,242,0,RED LINE,6402 Plymouth Avenue,Wellston,Missouri,63133
+8,8,Delmar Loop,362,0,RED LINE,660 Rosedale Avenue,Saint Louis,Missouri,63122
+9,9,Forest Park-DeBaliviere,118,0,RED LINE / BLUE LINE,250 DeBaliviere Avenue,Saint Louis,Missouri,63122
+10,10,Central West End,0,0,RED LINE / BLUE LINE,410 South Euclid Avenue,Saint Louis,Missouri,63110
+11,11,Grand,0,0,RED LINE / BLUE LINE,3560 Scott Avenue,Saint Louis,Missouri,63103
+12,12,Union Station,0,0,RED LINE / BLUE LINE,300 South 18th Street,Saint Louis,Missouri,63103
+13,13,Civic Center,0,0,RED LINE / BLUE LINE,1413 Spruce Street,Saint Louis,Missouri,63103
+14,14,Stadium,0,0,RED LINE / BLUE LINE,300 South 8th Street,Saint Louis,Missouri,63102
+15,15,8th & Pine,0,0,RED LINE / BLUE LINE,Pine Street & North 8th Street,Saint Louis,Missouri,63101
+16,16,Convention Center,0,0,RED LINE / BLUE LINE,600 North 6th Street,Saint Louis,Missouri,63101
+17,17,Arch-Laclede's Landing,0,0,RED LINE / BLUE LINE,200 Washington Avenue,Saint Louis,Missouri,63102
+18,18,East Riverfront,295,0,RED LINE / BLUE LINE,100 South Front Street,East Saint Louis,Illinois,62201
+19,19,5th & Missouri,328,0,RED LINE / BLUE LINE,150 North 5th Street,East Saint Louis,Illinois,62201
+20,20,Emerson Park,816,25,RED LINE / BLUE LINE,929 North 15th Street,East Saint Louis,Illinois,62205
+21,21,Jackie Joyner-Kersee Center,0,0,RED LINE / BLUE LINE,1000 North 25th Street,East Saint Louis,Illinois,62205
+22,22,Washington Park,681,25,RED LINE / BLUE LINE,955 North Kingshighway,East Saint Louis,Illinois,62203
+23,23,Fairview Heights,853,45,RED LINE / BLUE LINE,9200 St. Clair Avenue,Fairview Heights,Illinois,62208
+24,24,Memorial Hospital,431,0,RED LINE,1502 Flanagan Road,Belleville,Illinois,62223
+25,25,Swansea,716,25,RED LINE,2222 North Illinois Street,Swansea,Illinois,62226
+26,26,Belleville,287,34,RED LINE,718 Scheel Street,Belleville,Illinois,62220
+27,27,College,598,25,RED LINE,2622 Carlyle Avenue,Belleville,Illinois,62221
+28,28,Shiloh-Scott,645,50,RED LINE,880 Metro Plaza Lane,Shiloh,Illinois,62225
+29,29,Forsyth,0,0,BLUE LINE,7411 Forsyth Blvd.,University City,Missouri,63130
+30,30,Clayton,800,0,BLUE LINE,275 South Central Avenue,Clayton,Missouri,63105
+31,31,Richmond Heights,57,0,BLUE LINE,8001 Galleria Parkway,Richmond Heights,Missouri,63117
+32,32,Brentwood I-64,914,26,BLUE LINE,8398 Eager Road,Brentwood,Missouri,63144
+33,33,Maplewood-Manchester,0,0,BLUE LINE,7911 Manchester Road,Maplewood,Missouri,63143
+34,34,Sunnen,0,0,BLUE LINE,21 Sunnen Drive,Maplewood,Missouri,63143
+35,35,Shrewsbury-Lansdowne I-44,800,25,BLUE LINE,7201 Lansdowne Avenue,Saint Louis,Missouri,63102
+36,36,University City-Big Bend,0,0,BLUE LINE,7000 Forest Park Pkwy.,University City,Missouri,63130
+37,37,Skinker,0,0,BLUE LINE,260 North Skinker Blvd.,Saint Louis,Missouri,63130

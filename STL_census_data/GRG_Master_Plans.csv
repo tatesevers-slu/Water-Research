@@ -1,0 +1,68 @@
+FID,Id,Name,Greenway,Subproject,Miles,Begin_Year,Planning,Design_Eng,Construct,Verified,Total,Fundraise,Shape__Length
+1,0,North Hanley Metrolink to Maline Greenway,St. Vincent, ,1.206397881, ,100000,0,3300000,MAR,0,0,0.019557609
+2,0,North Park to Plaza 501,Maline, ,1.553443012, ,0,0,0, ,0,0,0.027579004
+3,0,Lorraine Davis to Larson Park,Shady-Deer, ,1.337160704, ,0,0,0, ,0,0,0.022753999
+4,0,Grand,Chouteau, ,2.012060075, ,0,0,0, ,0,0,0.035948558
+5,0,St. Cyr to Riverfront,Maline, ,0.614372751, ,0,0,0, ,0,0,0.01095317
+6,0,Forestwood to Koeneman Park,Maline, ,1.810384929, ,0,0,0, ,0,0,0.032552812
+7,0,Riverview Crossing,Maline, ,0.204214367, ,0,0,0, ,0,0,0.003377577
+8,0,Creve Coeur Park Connector Trail,Missouri, ,0.868745359, ,0,0,0, ,0,0,0.014382614
+9,0,Ameren Railroad Corridor Future Extension,Missouri, ,1.938112673, ,0,0,0, ,0,0,0.034930286
+10,0,Trail and Bridge from BaratHaven to WingHaven,Dardenne, ,0.13406345, ,0,0,0, ,0,0,0.002111199
+11,0,Route 370 Cantilever,Missouri, ,0.592194605, ,0,0,0, ,0,0,0.010258094
+12,0,Sunset to Columbia Bottom,MIssouri, ,21.37503876, ,0,0,0, ,0,0,0.362917233
+13,0,West Tyson Park to Route 66 State Park,Meramec, ,0.506919821, ,150000,450000,4500000,MAR,0,0,0.008254732
+14,0,Missouri River Greenway Route,Missouri, ,3.430911929, ,0,0,0, ,0,0,0.056890658
+15,0,Missouri River Greenway Route,Missouri, ,6.485842986, ,0,0,0, ,0,0,0.114447917
+16,0,Ameren Railroad Corridor Future Extension,Missouri, ,3.931890848, ,0,0,0, ,0,0,0.071773521
+17,0, , , ,1.172282738, ,0,0,0, ,0,0,0.020509653
+18,409,Olive Blvd to Jewish Community Center Creve Coeur,Centennial,409,5.212091926, ,100000,350000,3500000,MAR,0,0,0.093368533
+19,0,Fee Fee Greenway,Fee Fee, ,3.327209453, ,0,0,0,MAR,0,0,0.053967423
+20,62,Trestle - Branch Street Trailhead,Mississippi,62,0.63486764, ,150000,250000,3000000,MAR,0,0,0.011459431
+21,247,Sunset Hills to Kirkwood,Meramec,247,3.04759479, ,50000,300000,0,MAR,0,0,0.046443746
+22,0,Meramec Greenway WEST,Meramec, ,15.65224599, ,0,0,0, ,0,0,0.255419623
+23,0,George Winter to Tesson Ferry,Meramec,206,3.747496315, ,0,0,0, ,0,0,0.058620833
+24,206,Castlewood,Meramec,206,2.795856837, ,0,0,0, ,0,0,0.049807434
+25,0,Tesson Ferry to Lemay Ferry,Meramec,206,0.392064724, ,0,0,0, ,0,0,0.005998393
+26,407,Rieger Road to Rockwoods Reservation,Western,407,3.174501773, ,100000,0,0,MAR,0,0,0.052690988
+27,0,Mona Terrace to Olive,Centennial, ,1.025434375, ,0,0,0, ,0,0,0.018221903
+28,0,Vernon to Heman Park,Centennial, ,0.724224827, ,0,0,0, ,0,0,0.013270949
+29,0,Bridges to Laurel Park,Centennial, ,1.976735939, ,0,0,0, ,0,0,0.033836157
+30,0,Faust to Creve Coeur Park,Missouri, ,3.09522509, ,0,0,0, ,0,0,0.054432872
+31,0,Ameren Corridor (Chesterfield Levee to Faust Park),Missouri, ,1.350042356, ,0,0,0, ,0,0,0.02418867
+32,0,MCLT Trail,Missouri, ,1.411586725, ,0,0,0, ,0,0,0.024683787
+33,0,Columbia Bottom,Chouteau, ,4.080992942, ,0,0,0, ,0,0,0.067580716
+34,0,Lake,Chouteau, ,0.993889851, ,0,0,0, ,0,0,0.017839018
+35,0,Lafayette,Chouteau, ,0.787368181, ,0,0,0, ,0,0,0.014360265
+36,0,River Mile 6-10,Meramec, ,0.000155057, ,0,0,0, ,0,0,2.32E-06
+37,0,River Mile 6-10,Meramec, ,0.000262023, ,0,0,0, ,0,0,4.83E-06
+38,0,Tesson Ferry to Lower Meramec,Meramec, ,1.914551482, ,0,0,0, ,0,0,0.03183169
+39,206,Lower Meramec to Lemay Ferry,Meramec,206,2.326852673, ,100000,400000,5000000,MAR,0,0,0.039154616
+40,0,Babler Park to Rieger Road,Western, ,2.697580647, ,100000,350000,3500000,MAR,0,0,0.043807375
+41,205,Castlewood to Arnold's Grove,Meramec,205,2.306006176, ,0,0,0, ,0,0,0.041781671
+42,244,Busch to Barathaven,Busch,244,3.692252767, ,0,0,0, ,0,0,0.061903186
+43,288,Skinker to Spring,Chouteau,288,3.754938176, ,0,0,0, ,0,0,0.067187805
+44,0,St. Louis University to Enright Ave,Chouteau, ,0.718674172, ,50000,50000,0,MAR,0,0,0.010826074
+45,602,Olive Blvd to Creve Coeur Park,Centennial,602,3.722636411, ,0,250000,4000000,MAR,0,0,0.065057518
+46,606,Heman Park to Mona Terrace,Centennial,606,1.339330779, ,0,500000,4000000,MAR,0,0,0.022297863
+47,0,Spanish Lake Park to Columbia Bottom,Mississippi, ,1.820308283, ,150000,350000,3500000,MAR,0,0,0.031006462
+48,0,Dardenne Greenway,Dardenne, ,3.116798846, ,0,0,0, ,0,0,0.054401625
+49,253,Glencoe to Route 66 State Park,Meramec,253,2.120794159, ,0,300000,3000000,MAR,0,0,0.034423333
+50,0, , , ,2.590457056, ,0,0,0, ,0,0,0.040224959
+51,0,Wild Horse Creek Road to Missouri Greenway,Western, ,1.494968601, ,100000,500000,5000000,MAR,0,0,0.024726295
+52,0,Sarah Ave to St. Louis U,Chouteau, ,0.596150008, ,175000,350000,3000000,MAR,0,0,0.010819167
+53,0,Aquaport to Maryland Heights Gov Center,Fee Fee, ,1.167812914, ,250000,350000,0,MAR,0,0,0.018497689
+54,0,Bella Fontaine Park to Koeneman Park,Maline, ,0.782597527, ,150000,300000,3000000,MAR,0,0,0.013492467
+55,231,Dardenne Park to St. Peter's GC Clubhouse,Dardenne,231,0.720868436, ,0,350000,2500000,MAR,0,0,0.011950056
+56,0,Cottleville Bluebird to Eagles Way,Dardenne, ,2.182535547, ,100000,250000,3000000,MAR,0,0,0.039560704
+57,0,Cliff Cave to Meramec,Mississippi, ,4.529383164, ,0,0,0, ,0,0,0.077692007
+58,0,Widman to Mississippi,Meramec, ,0.659951106, ,0,0,0, ,0,0,0.011214079
+59,0,JB to Cliff Cave,Mississippi, ,6.298612554, ,0,0,0, ,0,0,0.098921367
+60,0,JB to Sylvan Springs,Mississippi, ,0.842215427, ,0,0,0, ,0,0,0.014080777
+61,0,Downtown St. Louis to River des Peres,Mississippi, ,5.483970137, ,0,0,0, ,0,0,0.047416181
+62,0,Downtown St. Louis to River des Peres,Mississippi, ,4.123249325, ,0,0,0, ,0,0,0.067139212
+63,0,Hwy 94 to Wapelhorst Park,Centennial, ,0.868563599, ,0,0,0, ,0,0,0.014156828
+64,0, ,Meramec, ,0, ,0,0,0, ,0,0,0.063782927
+65,0, , , ,0, ,0,0,0, ,0,0,0.02852205
+66,0, , , ,0, ,0,0,0, ,0,0,0.021815185
+67,0, , , ,0, ,0,0,0, ,0,0,0.029701886

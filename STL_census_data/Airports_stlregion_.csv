@@ -1,0 +1,39 @@
+FID,ObjectID,NAME,FCC,FEATTYPE,MNFC,LOC_ID,USE_,OWNERNAME,ELEVATION,CONGES_LEV,SERV_LEV,LRGCERTENP,COMM_ENP,AIRTAXIENP,FOREIGNENP,INTRANENP,HUB_SIZE,TOWER_TYPE,Shape__Area,Shape__Length
+1,1030,St Louis Downtown Airport,D58,Airport ground,9732,CPS,PU, ,413,U,RL,0,0,50,0,0,G,5,0.000250832,0.080764353
+2,1031,Midamerica St Louis Airport,D58,Airport ground,9732,BLV,PR,Usaf,453,U,GA,406,0,0,0,0,G,6,0.000370825,0.095107045
+3,1032,St Louis Regional Airport,D58,Airport ground,9732,ALN,PU,St Louis Regional,544,U,RL,0,0,3,0,0,G,5,0.00056179,0.13415075
+4,1033,St Louis Metro-East Airport,D58,Airport ground,9732,3K6,PU, ,477,U,RL,0,0,0,0,0, ,0,6.95E-05,0.033647091
+5,1034,Greenville Airport,D58,Airport ground,9732,GRE,PU, ,541,U,GA,0,0,0,0,0, ,6,0.000275007,0.066954227
+6,1035,Litchfield Municipal Airport,D58,Airport ground,9732,3LF,PU,Litchfield Apt Auth,690,U,GA,0,0,0,0,0, ,6,4.62E-05,0.045099633
+7,1041,Sparta Community Airport,D58,Airport ground,9732,SAR,PU, ,538,U,GA,0,0,2,0,0,G,6,5.78E-05,0.047684828
+8,1650,Hermann Municipal Airport,D58,Airport ground,9732,63M, , ,-999, , ,0,0,0,0,0, , ,1.60E-05,0.027672054
+9,1651,Greensfield Airport,D58,Airport ground,9732,M71, , ,-999, , ,0,0,0,0,0, , ,1.78E-05,0.03236874
+10,1652,Washington Regional Airport,D58,Airport ground,9732,MO6,PU, ,487, , ,0,0,0,0,0, , ,3.23E-05,0.027955749
+11,1653,Sullivan Regional Airport,D58,Airport ground,9732,UUV,PU,City Of Sullivan,933,U,GA,0,0,0,0,0, , ,0.000131796,0.06713378
+12,1654,St Clair Regional Airport,D58,Airport ground,9732,K39,PU,City Of St Clair,654,U,GA,0,0,0,0,0, ,0,3.71E-05,0.028852145
+13,1655,Cuba Municipal Airport,D58,Airport ground,9732,UBX,PU,City Of Cuba,1022,U,GA,0,0,0,0,0, ,0,3.71E-05,0.028818732
+14,1658,Festus Memorial Airport,D58,Airport ground,9732,FES,PU, ,433, , ,0,0,0,0,0, ,6,2.49E-05,0.023105031
+15,1660,Spirit of St Louis Airport,D58,Airport ground,9732,SUS,PU, ,463,U,RL,0,0,133,0,0,G,5,0.000485408,0.112751838
+16,1661,Creve Coeur Airport,D58,Airport ground,9732,1H0, , ,-999, , ,0,0,0,0,0, , ,3.96E-05,0.041768624
+17,1662,St Charles County Smartt Airport,D58,Airport ground,9732,SET,PU, ,436, , ,0,0,0,0,0, , ,0.000188617,0.055118214
+18,1663,St Charles Airport,D58,Airport ground,9732,3SQ,PU, ,442,U,RL,0,0,0,0,0, ,6,5.73E-05,0.047363725
+19,1664,Lambert-St Louis International Airport,D58,Airport ground,9732,STL,PU,City Of St Louis,604,S,PR,11604253,58180,139,0,0,L,3,0.001012719,0.19873674
+20,4254,St Louis Downtown Airport,D59,Airport runway,9776,CPS,PU, ,413,U,RL,0,0,50,0,0,G,5,2.14E-05,0.174898673
+21,4255,Midamerica St Louis Airport,D59,Airport runway,9776,BLV,PR,Usaf,453,U,GA,406,0,0,0,0,G,6,3.37E-05,0.148478551
+22,4256,St Louis Regional Airport,D59,Airport runway,9776,ALN,PU,St Louis Regional,544,U,RL,0,0,3,0,0,G,5,3.63E-05,0.216475531
+23,4257,St Louis Metro-East Airport,D59,Airport runway,9776,3K6,PU, ,477,U,RL,0,0,0,0,0, ,0,1.84E-06,0.020434775
+24,4258,Greenville Airport,D59,Airport runway,9776,GRE,PU, ,541,U,GA,0,0,0,0,0, ,6,4.79E-06,0.044692713
+25,4259,Litchfield Municipal Airport,D59,Airport runway,9776,3LF,PU,Litchfield Apt Auth,690,U,GA,0,0,0,0,0, ,6,2.63E-06,0.027721243
+26,4265,Sparta Community Airport,D59,Airport runway,9776,SAR,PU, ,538,U,GA,0,0,2,0,0,G,6,3.78E-06,0.042981428
+27,4874,Hermann Municipal Airport,D59,Airport runway,9776,63M, , ,-999, , ,0,0,0,0,0, , ,1.67E-06,0.022613768
+28,4875,Greensfield Airport,D59,Airport runway,9776,M71, , ,-999, , ,0,0,0,0,0, , ,1.63E-06,0.023258573
+29,4876,Washington Regional Airport,D59,Airport runway,9776,MO6,PU, ,487, , ,0,0,0,0,0, , ,2.48E-06,0.036996955
+30,4877,Sullivan Regional Airport,D59,Airport runway,9776,UUV,PU,City Of Sullivan,933,U,GA,0,0,0,0,0, , ,5.41E-06,0.054014125
+31,4878,St Clair Regional Airport,D59,Airport runway,9776,K39,PU,City Of St Clair,654,U,GA,0,0,0,0,0, ,0,2.38E-06,0.032651664
+32,4879,Cuba Municipal Airport,D59,Airport runway,9776,UBX,PU,City Of Cuba,1022,U,GA,0,0,0,0,0, ,0,2.23E-06,0.019288373
+33,4882,Festus Memorial Airport,D59,Airport runway,9776,FES,PU, ,433, , ,0,0,0,0,0, ,6,2.09E-06,0.028701876
+34,4883,Spirit of St Louis Airport,D59,Airport runway,9776,SUS,PU, ,463,U,RL,0,0,133,0,0,G,5,2.65E-05,0.219453022
+35,4884,Creve Coeur Airport,D59,Airport runway,9776,1H0, , ,-999, , ,0,0,0,0,0, , ,1.29E-05,0.027628812
+36,4885,St Charles Airport,D59,Airport runway,9776,3SQ,PU, ,442,U,RL,0,0,0,0,0, ,6,2.37E-06,0.048060057
+37,4886,St Charles County Smartt Airport,D59,Airport runway,9776,SET,PU, ,436, , ,0,0,0,0,0, , ,1.07E-05,0.095834769
+38,4887,Lambert-St Louis International Airport,D59,Airport runway,9776,STL,PU,City Of St Louis,604,S,PR,11604253,58180,139,0,0,L,3,0.000175161,0.591995972

@@ -1,0 +1,34 @@
+FID,Id,Greenway,Name,Miles,Subproject,YearBuilt,Shape__Length
+1,0,St. Vincent,Porter Park to Etzel,1.345773658, ,2012,0.021937557
+2,0,Centennial,Wash U to Delmar,1.364402958, ,2011,0.021302957
+3,0,Shady-Deer,Deer Creek Park and Center,0.675161368, ,2008,0.011701623
+4,0,Mississippi,River des Peres to Jefferson Barracks,1.747901152, ,2012,0.028052565
+5,0,Mississippi,Biddle Street to OCRB,14.05717011,108,2004-2010,0.225981775
+6,0,Missouri,Monarch Chesterfield Levee Trail,10.58935823, ,2008,0.183451455
+7,0,Busch,Katy Trail to Busch Wildlife,4.734057993, ,2008-2015,0.078661244
+8,0,Missouri,Truman Park Connector,0.3724342, ,2005,0.006175547
+9,0,Sunset,Old Town Florissant to Missouri River,3.903821133, ,2008-2010,0.064374381
+10,0,Western,Rockwoods Reservation to Meramec Greenway,1.573745215, ,2007,0.026113546
+11,0,Meramec,Arnold's Grove Park to Greentree Park,3.635249565, ,2011,0.06356622
+12,0,Meramec,Lower Meramec County Park,1.937721412, ,2007,0.032103318
+13,0,Meramec,WFP Railroad to Sherman Beach Park,3.145142565, ,2007-2012,0.054047124
+14,0,Dardenne,Barathaven-Bluebird,4.119154877, ,2007,0.07127805
+15,0,Dardenne,Woodlands Sports Park to Dardenne Park,4.159899852, ,2010,0.069143249
+16,0,River des Peres,Wellington Bridge,0.034174981,256,2012,0.00053895
+17,208,Missouri,Earth City Levee,4.725099529,208,2007-2015,0.075393365
+18,0,Dardenne,Legacy Park Trail,1.144280373, ,2009,0.020038835
+19,0,Dardenne,Vantage Park to Woodlands Parkway,1.631180109, ,2014,0.026884822
+20,0,Meramec,Route 66 State Park to Lions Park,1.506516996, ,2013,0.025805066
+21,0,Centennial,Shaw Park to Olive,3.281100872, ,2010-2013,0.053524497
+22,0,Meramec,Unger Park to Winter Park,5.542494105, ,2007-2014,0.08854454
+23,0,Mississippi,Cliff Cave,4.659677734, ,2007,0.072013389
+24,0,Maline,St. Cyr,0.136844182, ,2015,0.002499856
+25,0,St. Vincent,St. Charles Rock Rd to North Hanley Metrolink,0.371627941, ,2008-2012,0.006383114
+26,0,St. Vincent,St. Charles Rock Rd to North Hanley Metrolink,3.261087075, ,2008-2012,0.052302983
+27,0,River des Peres,Shrewsbury Metrolink to Carondolet Park,7.319921333, ,2005-2013,0.119213468
+28,0,Centennial,Katy to Heritage Trail,1.984933856, ,2013,0.033604192
+29,0,Boschert,New Town to Katy Trail,5.444407049, ,2008-2012,0.09023993
+30,0,Boschert,New Town to Katy Trail,0.004742425, ,2008-2012,7.73E-05
+31,0,Gravois,Grant's Trail,10.12556871, ,2006-2007,0.16790426
+32,0,Fee Fee,Aquaport to Creve Coeur Park,0.772522917, ,2014,0.013150739
+33,0,Meramec,Rock Hollow,2.260663335, ,2010,0.035148602
