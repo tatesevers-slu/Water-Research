@@ -7,7 +7,7 @@
 **Undergraduate Researchers:**  
 - **Jacob Verschueren** ([jacob.verschueren@slu.edu](mailto:jacob.verschueren@slu.edu)) – Neuroscience Minor; Biology and Psychology  
 - **Tate Severs** ([tate.severs@slu.edu](mailto:tate.severs@slu.edu)) – Environmental Science; Philosophy Minor  
-- **Pascal Sikorski** ([pascal.sikorski@slu.edu](mailto:pascal.sikorski@slu.edu)) – Computer Science; Mathematics Minor  
+- **Pascal Sikorski** ([pascal.sikorski@slu.edu](mailto:pascal.sikorski@slu.edu)) – Computer Science and Mathematics; Philosophy Minor  
 
 **Project Title:** Assessment of Contaminant Transport Dynamics in Aquatic Ecosystems in St. Louis: Implications of a Nuclear Waste Containment Facility on Water Quality  
 **Research Period:** February – March 2024  
