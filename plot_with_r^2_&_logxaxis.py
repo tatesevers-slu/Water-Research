@@ -2,6 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 from scipy.spatial import cKDTree
+from scipy.stats import pearsonr
 
 # -----------------------------
 # 1. Load and prepare the datasets
@@ -40,26 +41,11 @@ df_water["Nearest_Median_Income"] = df_water.apply(
 
 # List of contaminant element columns (as in your stl_water.csv)
 elements = [
-
-    "Copper (Cu) 324.752",
-    "Selenium (Se) 196.026",
-    "Silver (Ag) 243.778",
-    "Zinc (Zn) 213.857",
-    "Lithium (Li) 670.784",
-    "Sodium (Na) 589.592",
-    "Potassium (K) 766.490",
-    "Magnesium (Mg) 285.213",
-    "Calcium (Ca) 317.933",
-    "Strontium (Sr) 421.552",
-    "Ceseium (Cs) 455.531",
-    "Barium (Ba) 233.527",
-    "Iron (Fe) 238.204",
-    "Manganese (Mn) 259.372",
-    "Manganese (Mn) 257.610",
-    "Thallium (Tl) 190.801",
-    "Vandium (V) 290.880",
-    "Uranium (U) 385.958",
-    "Selenium (Se) 196.026"
+    "Copper (Cu) 324.752", "Selenium (Se) 196.026", "Silver (Ag) 243.778", "Zinc (Zn) 213.857", 
+    "Lithium (Li) 670.784", "Sodium (Na) 589.592", "Potassium (K) 766.490", "Magnesium (Mg) 285.213", 
+    "Calcium (Ca) 317.933", "Strontium (Sr) 421.552", "Ceseium (Cs) 455.531", "Barium (Ba) 233.527", 
+    "Iron (Fe) 238.204", "Manganese (Mn) 259.372", "Manganese (Mn) 257.610", "Thallium (Tl) 190.801", 
+    "Vandium (V) 290.880", "Uranium (U) 385.958", "Selenium (Se) 196.026"
 ]
 
 # Convert each element column to numeric (non-numeric entries like "ND" become NaN)
@@ -68,7 +54,7 @@ for el in elements:
 
 # -----------------------------
 # 4. Plotting: Create scatter plots with trendlines for each element,
-#    and calculate & display the Pearson correlation coefficient (R)
+#    and calculate & display the Pearson correlation coefficient (R^2) and p-value
 # -----------------------------
 
 for el in elements:
@@ -84,33 +70,38 @@ for el in elements:
         print(f"Skipping plot for {el} due to insufficient data.")
         continue
     
-    # Scatter plot: x = Median Income, y = contaminant level for the element
-    plt.scatter(x, y, alpha=0.7, edgecolor='k', label="Sampled + Nearest Income Found")
+    # Apply log base 10 transformation to x-axis (Median Household Income)
+    x_log = np.log10(x)
     
-    # Calculate Pearson correlation coefficient (R)
-    if len(x) > 1:
-        r_value = np.corrcoef(x, y)[0, 1]
+    # Scatter plot: x = log10(Median Income), y = Contaminant Concentration
+    plt.scatter(x_log, y, alpha=0.7, edgecolor='k', label="Sampled + Nearest Income Found")
+    
+    # Calculate Pearson correlation coefficient (R) and p-value, then square R to get R^2
+    if len(x_log) > 1:
+        r_value, p_value = pearsonr(x_log, y)
+        r_squared = r_value ** 2
     else:
-        r_value = np.nan
+        r_squared = np.nan
+        p_value = np.nan
 
     # Fit a linear trendline if there are at least two points
-    if len(x) > 1:
-        coeffs = np.polyfit(x, y, deg=1)
+    if len(x_log) > 1:
+        coeffs = np.polyfit(x_log, y, deg=1)
         poly_eqn = np.poly1d(coeffs)
-        x_trend = np.linspace(x.min(), x.max(), 100)
+        x_trend = np.linspace(x_log.min(), x_log.max(), 100)
         y_trend = poly_eqn(x_trend)
         plt.plot(x_trend, y_trend, color='red', linewidth=2, label="Linear Trend")
     
-    # Label the correlation coefficient on the plot
-    plt.text(0.05, 0.95, f"R = {r_value:.2f}", transform=plt.gca().transAxes,
+    # Label the R^2 and p-value on the plot
+    plt.text(0.05, 0.95, f"R^2 = {r_squared:.2f}\nP-value = {p_value:.2g}", transform=plt.gca().transAxes,
              fontsize=12, verticalalignment='top', bbox=dict(boxstyle="round", facecolor="white", alpha=0.5))
     
-    plt.xlabel("Median Household Income ($ in USD)")
+    plt.xlabel("Log10 of Median Household Income ($ in USD)")
     plt.ylabel(f"{el} (μg/L)")
-    plt.title(f"Median Household Income vs {el}")
+    plt.title(f"Log10 Median Household Income vs {el}")
     plt.legend()
     plt.grid(True)
     plt.tight_layout()
     plt.show()
     # If you prefer to save each plot instead of displaying, you can uncomment:
-    # plt.savefig(f"Income_vs_{el.replace(' ', '_').replace('(', '').replace(')', '')}.png")
+    # plt.savefig(f"Log10_Income_vs_{el.replace(' ', '_').replace('(', '').replace(')', '')}.png")

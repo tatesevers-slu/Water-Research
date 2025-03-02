@@ -1,68 +1,50 @@
 import pandas as pd
 import folium
 import os
-import tkinter as tk
-from tkinter import filedialog
 
-# Prompt user to select the CSV file
-root = tk.Tk()
-root.withdraw()  # Hide the root window
-file_path = filedialog.askopenfilename(title="Select CSV file")
+# Get the script directory
+script_dir = os.path.dirname(os.path.abspath(__file__))
 
-if not file_path:
-    raise FileNotFoundError("No file selected. Please select the correct CSV file.")
+# Define CSV filenames
+csv_paths = {
+    "poverty": os.path.join(script_dir, "Poverty_Status_Below_1.csv"),
+    "income": os.path.join(script_dir, "Median_Household_Income.csv")
+}
 
-# Ensure the file exists before proceeding
-if not os.path.exists(file_path):
-    raise FileNotFoundError(f"File not found: {file_path}")
+# Load datasets
+df_poverty = pd.read_csv(csv_paths["poverty"])
+df_income = pd.read_csv(csv_paths["income"])
 
-# Load the CSV file
-df = pd.read_csv(file_path)
+# 🛠️ Check if 'GEOID' is correct, or use 'GEOID_Data'
+merge_column = "GEOID" if "GEOID" in df_poverty.columns else "GEOID_Data"
 
-# Check if required columns exist
-required_columns = [
-    "INTPTLAT", "INTPTLON", "NAMELSAD", "Total_Poverty_Status", "POV_UNDER_1",
-    "Median_Household_Income", "Race_Total", "Race_White", "Race_Black",
-    "Race_American_Indian_Alaskan", "Race_Asian", "Race_Native_Hawaiian_Pacific",
-    "Race_Other", "Race_2_or_more", "Race_2_or_more_inc_other",
-    "Race_2_or_more_ex_other", "Vacant_Housing_Units", "GEOID"
-]
+# Drop duplicate columns before merging
+columns_to_drop = ["Total_Poverty_Status", "Median_Household_Income"]  # Drop from second file
+df_income = df_income.drop(columns=columns_to_drop, errors="ignore")
 
+# Merge datasets on 'GEOID' or 'GEOID_Data'
+df = df_poverty.merge(df_income, on=merge_column, how="inner")
+
+# Explicitly select the correct latitude and longitude columns
+df["INTPTLAT"] = df["INTPTLAT_x"]
+df["INTPTLON"] = df["INTPTLON_x"]
+
+# Print merged column names to verify
+print("\n✅ Merged DataFrame Columns:")
+print(df.columns.tolist())
+
+# Required columns check
+required_columns = ["INTPTLAT", "INTPTLON", merge_column, "Total_Poverty_Status", "Median_Household_Income"]
 missing_columns = [col for col in required_columns if col not in df.columns]
 if missing_columns:
-    raise ValueError(f"Missing required columns: {', '.join(missing_columns)}")
-
-# Prompt user to select GeoJSON file
-geojson_path = filedialog.askopenfilename(title="Select GeoJSON file for boundaries")
-
-if not geojson_path:
-    raise FileNotFoundError("No GeoJSON file selected. Please select the correct file.")
-
-if not os.path.exists(geojson_path):
-    raise FileNotFoundError(f"File not found: {geojson_path}")
+    raise ValueError(f"❌ Missing required columns: {', '.join(missing_columns)}")
 
 # Create a map centered around the mean latitude and longitude
 map_center = [df["INTPTLAT"].mean(), df["INTPTLON"].mean()]
 poverty_map = folium.Map(location=map_center, zoom_start=10)
 
-# Add a choropleth map
-folium.Choropleth(
-    geo_data=geojson_path,
-    name="choropleth",
-    data=df,
-    columns=["GEOID", "Median_Household_Income"],
-    key_on="feature.properties.GEOID",
-    fill_color="YlOrRd",  # Yellow to Red gradient
-    fill_opacity=0.7,
-    line_opacity=0.2,
-    legend_name="Median Household Income ($)"
-).add_to(poverty_map)
-
-# Add layer control
-folium.LayerControl().add_to(poverty_map)
-
 # Save the map to an HTML file
-output_file = os.path.join(os.path.dirname(file_path), "poverty_choropleth_map.html")
+output_file = os.path.join(script_dir, "poverty_choropleth_map.html")
 poverty_map.save(output_file)
 
-print(f"Map has been saved as {output_file}. Open it in a browser to view.")
+print(f"\n🎉 Map has been saved as {output_file}. Open it in a browser to view.")
