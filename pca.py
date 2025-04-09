@@ -6,11 +6,9 @@ import statsmodels.api as sm
 import matplotlib.pyplot as plt
 from scipy.spatial import cKDTree
 
-# -----------------------------
-# 1. Load and process the water sampling data
-# -----------------------------
+#load
 df = pd.read_csv("stl_water.csv")
-# Split the coordinate string into separate Latitude and Longitude columns
+#split coordinate string into separate Latitude and Longitude columns
 df[['Latitude', 'Longitude']] = df['Cordinate (lat/lon)'].str.split(',', expand=True).astype(float)
 
 elements = [
@@ -21,28 +19,27 @@ elements = [
     "Vandium (V) 290.880", "Uranium (U) 385.958", "Selenium (Se) 196.026"
 ]
 
-# Convert contaminant columns to numeric (non-numeric values like "ND" become NaN)
+# "ND" become NaN, otherwise numeric sample values
 for el in elements:
     df[el] = pd.to_numeric(df[el], errors="coerce")
 
-# Impute missing values using the column mean
+# missing values filled with column mean
+# that being average contaminant across all samples
 df_elements = df[elements]
 df_elements_imputed = df_elements.fillna(df_elements.mean())
 
-# Standardize the data before PCA
+# standardize
 scaler = StandardScaler()
 X_scaled = scaler.fit_transform(df_elements_imputed)
 
-# -----------------------------
-# 2. Perform PCA on the water sampling data
-# -----------------------------
+# PCA step
 pca = PCA(n_components=6)
 pca_scores = pca.fit_transform(X_scaled)
 pca_columns = [f'PC{i+1}' for i in range(pca_scores.shape[1])]
 pca_df = pd.DataFrame(pca_scores, columns=pca_columns)
 df = pd.concat([df, pca_df], axis=1)
 
-# Plot the explained variance ratio
+# plot variance ratio
 plt.figure(figsize=(6, 4))
 plt.bar(range(1, len(pca.explained_variance_ratio_) + 1),
         pca.explained_variance_ratio_,
@@ -53,13 +50,12 @@ plt.title('PCA Explained Variance')
 plt.tight_layout()
 plt.show()
 
-# -----------------------------
-# 3. Load and clean the median income data; assign nearest income via KDTree
-# -----------------------------
+# load and clean the median income data
+# assign the nearest income with KDtree
 income_df = pd.read_csv("Median_Household_Income.csv")
 income_df["INTPTLAT"] = pd.to_numeric(income_df["INTPTLAT"], errors="coerce")
 income_df["INTPTLON"] = pd.to_numeric(income_df["INTPTLON"], errors="coerce")
-# Clean and convert the median income column (remove commas or dollar signs if present)
+# Clean and convert the median income column
 income_df["Median_Household_Income"] = income_df["Median_Household_Income"].replace('[\$,]', '', regex=True)
 income_df["Median_Household_Income"] = pd.to_numeric(income_df["Median_Household_Income"], errors="coerce")
 
@@ -76,16 +72,16 @@ df["Nearest_Median_Income"] = df.apply(lambda row: get_nearest_income(row["Latit
 print("Nearest Median Income (first 5):")
 print(df["Nearest_Median_Income"].head())
 
-# -----------------------------
-# 4. Regress median household income on the first two PCA components
-# -----------------------------
-# Drop rows with missing values
+# regression of median household income
+# Drop rows with missing values (after searching for median household income)
 df_reg = df.dropna(subset=["Nearest_Median_Income", "PC1", "PC2", "PC3", "PC4", "PC5", "PC6"])
 print("Number of observations for regression:", df_reg.shape[0])
 
 X_reg = df_reg[['PC1', 'PC2', 'PC3', 'PC4', 'PC5', 'PC6']]
-X_reg = sm.add_constant(X_reg)  # Add a constant term
+X_reg = sm.add_constant(X_reg)
+#x_reg formed using the first 6 principal components
 y = df_reg['Nearest_Median_Income']
+#y is dependent var
 
 model = sm.OLS(y, X_reg).fit()
 print(model.summary())
@@ -97,4 +93,3 @@ plt.ylabel('Cumulative Explained Variance')
 plt.title('Cumulative Explained Variance by PCA Components')
 plt.grid(True)
 plt.show()
-
