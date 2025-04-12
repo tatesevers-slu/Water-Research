@@ -27,10 +27,14 @@ for el in elements:
 # Add a small constant to avoid taking log(0)
 for el in elements:
     df[el + "_log"] = np.log10(df[el] + 1e-6)
+# do the log instead of x+1
+# so where it would be 0, add 1
+# everything else would be what it was before, +1
 
 log_elements = [el + "_log" for el in elements]
 
 # impute missing values using the column mean (mean of each log-transformed variable)
+# put 0 instead, don't do the mean
 df_elements = df[log_elements]
 df_elements_imputed = df_elements.fillna(df_elements.mean())
 
@@ -39,7 +43,7 @@ scaler = StandardScaler()
 X_scaled = scaler.fit_transform(df_elements_imputed)
 
 # PCA on the log-transformed water sampling data
-pca = PCA(n_components=5)
+pca = PCA()
 pca_scores = pca.fit_transform(X_scaled)
 pca_columns = [f'PC{i+1}' for i in range(pca_scores.shape[1])]
 pca_df = pd.DataFrame(pca_scores, columns=pca_columns, index=df.index)
@@ -100,6 +104,10 @@ df["log_Median_Income"] = np.log10(df["Nearest_Median_Income"] + 1e-6)
 df_reg = df.dropna(subset=["log_Median_Income", "PC1", "PC2", "PC3", "PC4", "PC5"])
 print("Number of observations for regression:", df_reg.shape[0])
 
+# should be able to output PCA scores
+# get scores for all 18 loadings
+# that is the actual data that I will regress on income
+
 X_reg = df_reg[['PC1', 'PC2', 'PC3', 'PC4', 'PC5']]
 X_reg = sm.add_constant(X_reg)
 y = df_reg['log_Median_Income']
@@ -115,21 +123,3 @@ plt.ylabel('Cumulative Explained Variance')
 plt.title('Cumulative Explained Variance by PCA Components')
 plt.grid(True)
 plt.show()
-
-# significant Principal Components and Their Key Loadings
-# Remove the constant and extract p-values for just the PCs
-pvals = model.pvalues.drop('const')
-significant_threshold = 0.05
-significant_pcs = pvals[pvals < significant_threshold].index
-
-print("Significant Principal Components (p < 0.05):")
-print(pvals[pvals < significant_threshold])
-
-# for each significant PC, print the loadings sorted by absolute value,
-# so you can see which original contaminants drive the relationship.
-for pc in significant_pcs:
-    print(f"\nLoadings for {pc} (sorted by absolute value):")
-    loadings_sorted = loadings[pc].abs().sort_values(ascending=False)
-    # Print the original loadings with their signs, sorted in order of absolute magnitude.
-    loadings_with_sign = loadings.loc[loadings_sorted.index, pc]
-    print(loadings_with_sign)
