@@ -184,3 +184,15 @@ for pc in pcs:
     R2 = r**2
     print(f"{pc}: r = {r:.3f}, R² = {R2:.3f}")
 
+from scipy.stats import pearsonr
+
+# …
+
+pcs = ['PC1', 'PC2', 'PC3', 'PC4', 'PC5']
+print("\nCorrelation (r), R² and p‑value between each PC and log(Median_Income):")
+for pc in pcs:
+    # dropna so that length matches
+    valid = df_reg[[pc, 'log_Median_Income']].dropna()
+    r, p = pearsonr(valid[pc], valid['log_Median_Income'])
+    R2 = r**2
+    print(f"{pc}: r = {r:.3f}, R² = {R2:.3f}, p = {p:.3f}")
